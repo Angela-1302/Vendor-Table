@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Tables</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    
+    <body  bgcolor="white">
+        <div>
+        
+    <table border="10" class="table1">
+        <h1><center>Discount Table</center></h1>
+        <tr class="heading1">
+        <th>Vendor</th>
+        <th>Trade A</th>
+        <th>Trade B</th>
+        <th>Trade C</th>
+        <th>Trade D</th>
+        </tr>
+
+        <tr>
+            <td>Vendor1</td>
+            <td>12</td>
+            <td>12</td>
+            <td>N/A</td>
+            <td>6</td>
+         </tr>
+         <tr>
+            <td>Vendor2</td>
+            <td>10</td>
+            <td>8</td>
+            <td>20</td>
+            <td>N/A</td>
+         </tr>
+         <tr>
+            <td>Vendor3</td>
+            <td>N/A</td>
+            <td>25</td>
+            <td>3</td>
+            <td>16</td>
+         </tr>
+         <tr>
+            <td>Vendor4</td>
+            <td>9</td>
+            <td>N/A</td>
+            <td>16</td>
+            <td>30</td>
+         </tr>
+         <tr>
+            <td>Vendor5</td>
+            <td>5</td>
+            <td>11</td>
+            <td>N/A</td>
+            <td>30</td>
+         </tr>
+        
+    </table>
+</div>
+    <div>
+        <table border="10" class="table1">
+            <h1><center>Product Table</center></h1>
+            <tr class="heading1">
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Tags</th>
+            <th>Vendor</th>
+            <th>Cart</th>
+            </tr>
+
+            <tr>
+                <div id="product1">
+                <td id="title">1</td>
+                <td>Test Product 1</td>
+                <td>12.5</td>
+                <td>TRADE A,ice</td>
+                <td>Vendor 5</td>
+                <td class="cart"><button onclick="addTocart(product1)">Add To Cart</button></td>
+            </div> 
+            </tr>
+
+             <tr>
+                <td>2</td>
+                <td>Test Product 2</td>
+                <td>42.5</td>
+                <td>TRADE B,ice2</td>
+                <td>Vendor 4</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>3</td>
+                <td>Test Product 3</td>
+                <td>200</td>
+                <td>TRADE C,test</td>
+                <td>Vendor 3</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>4</td>
+                <td>Test Product 4</td>
+                <td>52.5</td>
+                <td>TRADE C,test</td>
+                <td>Vendor 2</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>5</td>
+                <td>Test Product 5</td>
+                <td>712.5</td>
+                <td>TRADE D,test</td>
+                <td>Vendor 1</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>6</td>
+                <td>Test Product 6</td>
+                <td>17</td>
+                <td>TRADE A,test</td>
+                <td>Vendor 3</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>7</td>
+                <td>Test Product 7</td>
+                <td>55</td>
+                <td>TRADE A,test</td>
+                <td>Vendor 3</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>8</td>
+                <td>Test Product 8</td>
+                <td>37</td>
+                <td>TRADE D,test</td>
+                <td>Vendor 4</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>9</td>
+                <td>Test Product 9</td>
+                <td>82</td>
+                <td>TRADE C,test</td>
+                <td>Vendor 4</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>10</td>
+                <td>Test Product 10</td>
+                <td>52</td>
+                <td>TRADE B,test</td>
+                <td>Vendor 2</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>11</td>
+                <td>Test Product 11</td>
+                <td>102</td>
+                <td>TRADE B,test</td>
+                <td>Vendor 1</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>12</td>
+                <td>Test Product 12</td>
+                <td>172.5</td>
+                <td>TRADE B,test</td>
+                <td>Vendor 4</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>13</td>
+                <td>Test Product 13</td>
+                <td>100</td>
+                <td>TRADE D,test</td>
+                <td>Vendor 5</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>14</td>
+                <td>Test Product 14</td>
+                <td>99.5</td>
+                <td>TRADE D,test</td>
+                <td>Vendor 5</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>15</td>
+                <td>Test Product 15</td>
+                <td>87.5</td>
+                <td>TRADE A,test</td>
+                <td>Vendor 5</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>16</td>
+                <td>Test Product 16</td>
+                <td>57</td>
+                <td>TRADE A,test</td>
+                <td>Vendor 1</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>17</td>
+                <td>Test Product 17</td>
+                <td>10</td>
+                <td>TRADE C,test</td>
+                <td>Vendor 2</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>18</td>
+                <td>Test Product 18</td>
+                <td>412.5</td>
+                <td>TRADE D,test</td>
+                <td>Vendor 3</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>19</td>
+                <td>Test Product 19</td>
+                <td>112.5</td>
+                <td>TRADE B,test</td>
+                <td>Vendor 4</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>20</td>
+                <td>Test Product 20</td>
+                <td>102</td>
+                <td>TRADE B,test</td>
+                <td>Vendor 5</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>21</td>
+                <td>Test Product 21</td>
+                <td>52</td>
+                <td>TRADE A,test</td>
+                <td>Vendor 3</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+
+             <tr>
+                <td>22</td>
+                <td>Test Product 22</td>
+                <td>32</td>
+                <td>TRADE C,test</td>
+                <td>Vendor 2</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>23</td>
+                <td>Test Product 23</td>
+                <td>12</td>
+                <td>TRADE B,test</td>
+                <td>Vendor 4</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>24</td>
+                <td>Test Product 24</td>
+                <td>584.5</td>
+                <td>TRADE D,test</td>
+                <td>Vendor 1</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>25</td>
+                <td>Test Product 25</td>
+                <td>67</td>
+                <td>TRADE D,test</td>
+                <td>Vendor 5</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>26</td>
+                <td>Test Product 26</td>
+                <td>132.5</td>
+                <td>TRADE A,test</td>
+                <td>Vendor 5</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>27</td>
+                <td>Test Product 27</td>
+                <td>42.5</td>
+                <td>TRADE B,test</td>
+                <td>Vendor 2</td>
+                <td class="cart"><button>Add To Cart</button></td>
+             </tr>
+
+            </table>
+            
+    </div>
+
+    <div>
+        <table border="10" class="table1">
+            <h1><center>Shopping Cart</center></h1>
+            <tr class="heading1">
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Org Price</th>
+            <th>DiscountPercentage</th>
+            <th>Discount Price</th>
+            <th>Vendor</th>
+            <th>Remove Cart</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Test Product 22</td>
+                <td>32</td>
+                <td>20</td>
+                <td>25.60</td>
+                <td>Vendor 2</td>
+                <td><button class="cart1">Remove Cart</button></td>
+             </tr>
+
+             <tr>
+                <td>2</td>
+                <td>Test Product 25</td>
+                <td>67</td>
+                <td>30</td>
+                <td>46.90</td>
+                <td>Vendor 5</td>
+                <td><button class="cart1">Remove Cart</button></td>
+             </tr>
+
+            </table>
+    
+    </div>
+
+   
+        <p>Total Price : Rs. 72.5</p>
+        <ol id="hello"></ol>
+    
+
+</body>
+
+</html>
